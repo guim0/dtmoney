@@ -6,18 +6,22 @@ export const GlobalStyle = createGlobalStyle`
     --background: #f0f2f5;
     --red: #E52E4D;
     --blue: #5429CC;
+    --green: #33cc95;
     --blue-light: #6933ff;
     --text-title: #363f5f;
     --text-body:#969CB3;
     --shape:#ffffff;
 
+
+    --font-primary: 'Poppins';
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html{
 
@@ -36,9 +40,21 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
+body, input, textarea, button{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+}
+
+h1, h2, h3,h4,h5, strong{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+
 button{
     cursor: pointer;
 }
+
 [disabled]{
     opacity: 0.6;
     cursor: not-allowed;
