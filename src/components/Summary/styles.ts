@@ -32,7 +32,7 @@ export const Container = styled.div`
 
 }
 
-@media (max-width: 720px){
+@media (max-width: 820px){
     display: flex;
     flex-direction: column;
     align-items: center;
